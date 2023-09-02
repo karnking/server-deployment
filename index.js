@@ -9,6 +9,9 @@ app.get('/',(req,res)=>{
 app.get('/about',(req,res)=>{
     res.send("About get req")
 })
+app.get('/contact',(req,res)=>{
+    res.send(`Call me at ${process.env.PHONE_NUMBER}`)
+})
 
 app.post('/',(req,res)=>{
     res.send("Post request")
